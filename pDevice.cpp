@@ -88,7 +88,7 @@ void MenuItems()
     pMenu->AddGroup("[關于]", &CVars.Mvisible12, opt_Grp);
     if (CVars.Mvisible12)
     {
-        pMenu->AddItem("仅供学习 交流QQ群：166126451", &CVars.StatsBox, opt_OFFON);
+        pMenu->AddItem("仅供学习", &CVars.StatsBox, opt_OFFON);
     }
 }
 
@@ -156,7 +156,7 @@ HRESULT WINAPI nEndScene(LPDIRECT3DDEVICE9 pDevice)
     ESP.DrawMiscESP(pDevice);
     ESP.PlayerAimbot(pDevice);
 
-    Render.DrawString(0, 0, ColRed, 0, D3D.pFont, "仅供学习 交流QQ群：166126451");
+    Render.DrawString(0, 0, ColRed, 0, D3D.pFont, "仅供学习");
 
     if (CVars.DrawXHair)
     {
